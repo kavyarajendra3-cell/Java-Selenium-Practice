@@ -9,14 +9,16 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SwitchToFrame {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Throwable {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-		driver.get("");
-		WebElement element = driver.findElement(By.xpath(""));
+		driver.get("https://www.selenium.dev/selenium/web/iframes.html");
+		Thread.sleep(2000);
+	//	WebElement element = driver.findElement(By.xpath("//iframe[@name='iframe1-name']"));
+		WebElement element = driver.findElement(By.xpath("//iframe"));
 		driver.switchTo().frame(element);
-		driver.findElement(By.id("")).sendKeys("Kavya");
+		driver.findElement(By.id("email")).sendKeys("Kavya");
 	}
 
 }

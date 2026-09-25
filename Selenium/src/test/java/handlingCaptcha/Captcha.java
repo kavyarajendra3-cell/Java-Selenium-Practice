@@ -30,9 +30,11 @@ public class Captcha {
 		FileHandler.copy(temp,per);
 		
 		Tesseract tess = new Tesseract();
-		tess.setDatapath(null);
-		
-
+		tess.setDatapath("C:\\Users\\Kavya Rajendran\\Downloads\\5.5.2 source code.zip\\tesseract-ocr-tesseract-9c516f4\\tessdata");
+		String captext = tess.doOCR(per);
+		String text = captext.replace(" ", "");
+		System.out.println(text);
+		WebElement cTF = driver.findElement(By.id(""));
+		cTF.sendKeys("text");
 	}
-
 }
