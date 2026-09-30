@@ -9,6 +9,7 @@ public class Basic1 {
 		System.out.println(b);
 		int res = a+b;
 		System.out.println(res);
+		System.out.println("Hello GitHub");
 	}
 
 }
