@@ -12,7 +12,6 @@ public class Practice1 {
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 	driver.get("");
-
 	}
 
 }
