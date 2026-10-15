@@ -15,7 +15,6 @@ public class Start1 {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get("https://www.shoppersstack.com/");
-		driver.get("");
 		driver.findElement(By.id("loginBtn")).click();
 		driver.findElement(By.name("Email")).sendKeys("kavyarajendra3@gmail.com");
 		driver.findElement(By.name("Password")).sendKeys("kavyanikki");
