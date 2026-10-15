@@ -21,6 +21,7 @@ public class Start1 {
 		WebElement btn=driver.findElement(By.className("//span[@class='MuiButton-label']"));
 		Actions act = new Actions(driver);
 		act.moveToElement(btn).click().perform();
+		driver.close();
 	}
 	
 }
