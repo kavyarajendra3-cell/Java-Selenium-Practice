@@ -14,5 +14,6 @@ public class Practice1 {
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 	driver.get("");
 	driver.findElement(By.id("")).sendKeys("kavya");
+	driver.close();
 	}
 }
